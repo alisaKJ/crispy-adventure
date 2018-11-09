@@ -23,10 +23,8 @@
 .social { 
     padding: 35px 35px;
     text-align: right;
-    float: right; 
-    
- 
-}
+    float: right;   
+ }
 
 * {
     box-sizing: border-box;
