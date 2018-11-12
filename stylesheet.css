@@ -20,6 +20,11 @@
     background-color: #947dc1;
 }
 
+.songButton {
+  text-align: center;
+  background: #1dca7f;
+}
+
 .social { 
     padding: 35px 35px;
     text-align: right;
