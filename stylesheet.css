@@ -23,7 +23,16 @@
 .songButton {
   text-align: center;
   background: #1dca7f;
-}
+  }
+
+  .tellMeSongBtn {
+    background: #96e1b4
+  }
+
+  .gbyefoot {
+    text-align: center;
+    padding: 100px
+  }
 
 .social { 
     padding: 35px 35px;
