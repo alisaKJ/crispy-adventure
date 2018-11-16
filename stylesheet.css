@@ -23,6 +23,7 @@
 .songButton {
   text-align: center;
   background: #1dca7f;
+  padding: 5px;
   }
 
   .tellMeSongBtn {
@@ -206,3 +207,48 @@
       background: #fff;
       border-color: #FF33DA;
 }
+
+.goodByeSong {
+  height: 50px;	
+  overflow: hidden;
+  position: relative;
+ }
+ .goodByeSong h3 {
+  font-size: 2em;
+  color: limegreen;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%);	
+  transform:translateX(100%);
+  /* Apply animation to this element */	
+  -moz-animation: goodByeSong 15s linear infinite;
+  -webkit-animation: goodByeSong 15s linear infinite;
+  animation: goodByeSong 15s linear infinite;
+ }
+ /* Move it (define the animation) */
+ @-moz-keyframes goodByeSong {
+  0%   { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+ }
+ @-webkit-keyframes goodByeSong {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+ }
+ @keyframes goodByeSong {
+  0%   { 
+  -moz-transform: translateX(100%); /* Firefox bug fix */
+  -webkit-transform: translateX(100%); /* Firefox bug fix */
+  transform: translateX(100%); 		
+  }
+  100% { 
+  -moz-transform: translateX(-100%); /* Firefox bug fix */
+  -webkit-transform: translateX(-100%); /* Firefox bug fix */
+  transform: translateX(-100%); 
+  }
+ }
