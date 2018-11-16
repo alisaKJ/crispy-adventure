@@ -53,23 +53,11 @@
         <div class="songButton">
             <h2>What is your favorite song this semester?</h2>
 
-<button onclick="myFunction()">Click here to tell me.</button>
+<button class="tellMeSongBtn" onclick="myFunction()">Click here to tell me.</button>
 
 <p id="demo"></p>
 
-<script>
-function myFunction() {
-    var txt;
-    var person = prompt("Please type your favorite song:", "Sweet potato");
-    if (person == null || person == "") {
-        txt = "Oh.  Well, Just sing in the car to your kids.";
-    } else {
-        txt = "I like to sing " + person + " too!!";
-    }
-    document.getElementById("demo").innerHTML = txt;
-}
-
-</script>
+<script src="site.js"> </script>
 
         </div>
         
@@ -109,5 +97,7 @@ Came whiffling through the tulgey wood,  And burbled as it came!  One, two! One,
 
 </body>
 
-
+<footer class="gbyefoot">
+<h2>You reached the bottom!  Goodbye, So long, Farewell my friends...</h2>
+</footer>
 </html>
